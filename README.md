@@ -9,4 +9,4 @@
  ### JavaScript tól
  Ég og notaði Vite sem JavaScript tól til þess að setja upp "Build" ferli. 
  ### Web API 
- Sem Web API ákvað ég að nota til fyrirmyndar kóða sem gefinn var á Github undir námsefni [02.video.html](https://github.com/vefforritun/vef1-2023/blob/main/namsefni/40.html5/daemi/02.video.html). Ég auðvitað breytti kóðanum aðeins og notaði myndband sem ég fann á vefinum.
+ Sem Web API ákvað ég að nota til fyrirmyndar kóða sem gefinn var á Github undir námsefni [02.video.html](https://github.com/vefforritun/vef1-2023/blob/main/namsefni/40.html5/daemi/02.video.html). Ég auðvitað breytti kóðanum aðeins og notaði myndband sem ég fann á [Youtube](https://www.youtube.com/watch?v=CDvKAYa3-II).
