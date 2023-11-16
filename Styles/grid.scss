@@ -1,0 +1,21 @@
+* {
+    /* Grid stillingar */
+    --columns: 12;
+    --gutter: 30px;
+    --offset: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+
+  }
+
+  .main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+  }
+
+  
