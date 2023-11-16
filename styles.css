@@ -1,0 +1,141 @@
+* {
+        /* Grid stillingar */
+        --columns: 12;
+        --gutter: 30px;
+        --offset: 20px;
+      
+      
+        /* Transitions */
+        --transition-time-short: 300ms;
+        --transition-time-long: 600ms;
+        --transition-timing-function: ease-in-out;
+}
+
+
+
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: radial-gradient(#BB2528, #720e10);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+    
+    .content {
+        flex: 1;
+    }
+    
+
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+  
+    /* grid items eru miðjuð */
+    justify-items: center;
+    background: radial-gradient(#BB2528, #720e10);
+
+
+  
+
+  }
+
+
+/* Main */
+.main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    color: #fff;
+    padding: 40px;
+
+
+  
+
+  }
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 1em;
+    background: radial-gradient(#0b3b1f, #165B33);
+
+  }
+  
+
+
+
+/* fótur */
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 5em;
+    margin-bottom: 0;
+    padding-bottom: 2em;
+    background: radial-gradient(#0b3b1f, #165B33);
+  }
+
+/* Letur */
+  @font-face {
+    font-family: Lora;
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/Lora-VariableFont_wght.ttf") format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/NotoSansDisplay-VariableFont.ttf") format('woff');
+  }
+  
+
+  html,
+  input,
+  select,
+  button {
+    font-size: var(--font-base-body-px);
+    font-family: var(--font-family-base);
+  }
+
+
+  fieldset legend {
+    font-weight: bold;
+  }
+
+  .vid {
+    width: 70%;
+
+  }
+
+  .button {
+    background-color: #165B33;
+    border-radius: 5px;
+    border-color: #165B33;
+    color: #fff;
+    box-shadow: inset 0 0 0 2px #0b3b1f;
+    width: 10%;
+    padding: 0.5em;
+    margin-top: 1em;
+  }
+

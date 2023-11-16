@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkefni10</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-5CGQrO9E.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <h1>JólaEldur</h1>
+        <p>Jólin eru rétt ókomin!</p>
+    </header>
+
+
+
+ 
+    <video class="vid" src="/assets/fireplace-sZsKn9Us.mp4"></video>
+    <audio>
+        <source src="/assets/fireplace.audio-AsCu4ndb.mp4" type="audio/mpeg">
+    </audio>
+
+    <button class="button">Spila</button>
+    <script>
+        const video = document.querySelector('video');
+        const audio = document.querySelector('Audio');
+        const button = document.querySelector('button');
+        button.addEventListener('click', () => {
+          if (video.paused) {
+            video.play();
+            button.removeChild(button.firstChild);
+            button.appendChild(document.createTextNode('Pása'));
+          } else {
+            video.pause();
+            button.removeChild(button.firstChild);
+            button.appendChild(document.createTextNode('Spila'));
+          }
+        });
+
+        /*audio*/
+
+
+    video.onplay = function() {
+        audio.play();
+    };
+
+    video.onpause = function() {
+        audio.pause();
+    };
+
+    video.onseeking = function() {
+        audio.currentTime = video.currentTime;
+    };
+
+    video.onseeked = function() {
+        audio.currentTime = video.currentTime;
+    };
+
+    video.onended = function() {
+        audio.pause();
+        audio.currentTime = 0;
+    };
+        </script>
+ 
+    <main class="main">
+        <section>
+            <h2>Komdu þér vel fyrir</h2>
+            <p>Undirbúðu þig fyrir þæginlegheit næstu tvær mínúturnar. Ég mæli með að hella upp á einn rjúkandi heitan half&half kaffi og kakó og komdu þér vel fyrir.</p>
+        </section>
+        <section>
+            <h2>Ýttu á "Spila" hnappann</h2>
+            <p>Undir myndbandinu finnur þú hnappa sem heitir "Spila". Ýttu á hnappinn til þess að spila myndbandið, ef þú vilt pása myndbandið ýtirðu aftur á sama hnappa.</p>
+        </section>
+        <section>
+            <h2>Settu hljóðið í botn</h2>
+            <p>Settu hljóðið í botn og njóttu þess að hlusta á dáleiðandi arineld sem hefur róandi áhrif.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2>Betra er að gefa en að þiggja</h2>
+        <p>Jólin eru hátið gjafar og eftir að hafa undirgengið dáleiðslu arineldsins ákveður þú að gefa Róbert 100/100 stigum fyrir verkefnið, enda er það fullkomið í alla stað.</p>
+    </footer>
+    </div>
+</body>
+</html>
